@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/sos_button"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="72dp"
+        android:background="@drawable/home_icon_background"
+        android:elevation="4dp"
+        android:gravity="top|bottom"
+        android:shadowDx="4"
+        android:shadowDy="4"
+        android:shadowRadius="16"
+        android:shadowColor="@color/colorPrimaryDark"
+        android:text="SOS"
+        android:textAlignment="center"
+        android:textColor="@color/colorWhite"
+        android:textSize="64sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/current_location"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="Send my Location"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sos_button" />
+
+    <TextView
+        android:id="@+id/textView11"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/card_background"
+        app:layout_constraintBottom_toBottomOf="@+id/current_location"
+        app:layout_constraintEnd_toEndOf="@+id/current_location"
+        app:layout_constraintStart_toStartOf="@+id/current_location"
+        app:layout_constraintTop_toTopOf="@+id/current_location" />
+
+    <TextView
+        android:id="@+id/read_stories"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="Read inspirational stories"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/current_location" />
+
+    <TextView
+        android:id="@+id/textView13"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/card_background"
+        app:layout_constraintBottom_toBottomOf="@+id/read_stories"
+        app:layout_constraintEnd_toEndOf="@+id/read_stories"
+        app:layout_constraintStart_toStartOf="@+id/read_stories"
+        app:layout_constraintTop_toTopOf="@+id/read_stories" />
+
+    <TextView
+        android:id="@+id/self_defense"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
+        android:background="?attr/selectableItemBackground"
+        android:clickable="true"
+        android:elevation="1dp"
+        android:focusable="true"
+        android:padding="16dp"
+        android:text="Self Defense"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/read_stories" />
+
+    <TextView
+        android:id="@+id/textView14"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/card_background"
+        app:layout_constraintBottom_toBottomOf="@+id/self_defense"
+        app:layout_constraintEnd_toEndOf="@+id/self_defense"
+        app:layout_constraintStart_toStartOf="@+id/self_defense"
+        app:layout_constraintTop_toTopOf="@+id/self_defense" />
+
+</android.support.constraint.ConstraintLayout>
